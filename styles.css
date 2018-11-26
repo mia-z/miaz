@@ -4,42 +4,48 @@
 
 body {
     background-image: url("houndstooth-pattern.png");
+}
+
+.container {
+    background: rgba(225, 225, 225,0.5);
     width: 920px;
-    height: 600px;
+    min-height: 600px;
     margin: 10px auto 0 auto;
     padding-left: 1px;
     padding-right: 1px;
-    border-right-style: double;
-    border-right-width: 10px;
-    border-left-style: double;
-    border-left-width: 10px;
-    border-radius: 5px;
-}
-
-h1 {
-    font-family: "Spectral", serif;
-    text-align: right;
-    border-top-style: solid;
-    background: linear-gradient(135deg, #000000 0%,#000000 55.99%,#ffffff 56%,#ffffff 100%);
-    margin: 0 -8px 0 -8px;
+    border-right: 10px double;
+    border-left: 10px double;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-sizing: border-box;
 }
 
 header {
 
 }
 
+header h1 {
+    font-family: "Spectral", serif;
+    border-top: 3px solid black;
+    background: linear-gradient(135deg, #000000 0%, #000000 55.99%, #ffffff 56%, #ffffff 100%);
+    margin: auto -8px auto -8px;
+    padding-right: 4px;
+    text-align: end;
+}
+
 nav {
     background: linear-gradient(135deg, #FFFFFF 0%,#FFFFFF 50.99%,#000000 51%,#000000 100%);
-    margin: 0 -8px 0 -8px;
-    border-bottom-style: solid;
+    margin: auto -8px auto -8px;
+    border-bottom: 3px solid black;
 }
 
 nav ul {
-    max-width: 85%;
     list-style-type: none;
-    margin: 0 auto;
+    margin: 0 50% 0 auto;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
