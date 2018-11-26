@@ -1,0 +1,63 @@
+/*TOP RIGHT BOTTOM LEFT*/
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Spectral");
+
+body {
+    background-image: url("houndstooth-pattern.png");
+    width: 920px;
+    height: 600px;
+    margin: 10px auto 0 auto;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-right-style: double;
+    border-right-width: 10px;
+    border-left-style: double;
+    border-left-width: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: "Spectral", serif;
+    text-align: right;
+    border-top-style: solid;
+    background: linear-gradient(135deg, #000000 0%,#000000 55.99%,#ffffff 56%,#ffffff 100%);
+    margin: 0 -8px 0 -8px;
+}
+
+header {
+
+}
+
+nav {
+    background: linear-gradient(135deg, #FFFFFF 0%,#FFFFFF 50.99%,#000000 51%,#000000 100%);
+    margin: 0 -8px 0 -8px;
+    border-bottom-style: solid;
+}
+
+nav ul {
+    max-width: 85%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    font-family: "Ubuntu", serif;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
