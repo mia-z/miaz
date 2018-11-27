@@ -8,7 +8,7 @@ body {
 
 .container {
     background: rgba(225, 225, 225,0.5);
-    width: 920px;
+    max-width: 920px;
     min-height: 600px;
     margin: 10px auto 0 auto;
     padding-left: 1px;
@@ -43,7 +43,7 @@ nav ul {
     list-style-type: none;
     margin: 0 50% 0 auto;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     justify-content: center;
 }
@@ -66,4 +66,69 @@ nav li a:hover {
     background-color: black;
     color: white;
     font-weight: bold;
+}
+
+/*RULES FOR SCREEN SIZING AKA RESPONSIVE DESIGN*/
+@media only screen and (max-width: 934px) {
+    .container {
+        min-width: 600px;
+        min-height: 600px;
+    }
+
+    header h1 {
+        background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 50.99%, #000000 51%, #000000 100%);
+        text-align: start;
+        padding-left: 15px;
+    }
+
+    nav {
+        background: linear-gradient(45deg, #FFFFFF 0%,#FFFFFF 50.99%,#000000 51%,#000000 100%);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        min-width: 450px;
+        min-height: 600px;
+    }
+
+    header h1 {
+        background: white;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    nav {
+        background: white;
+    }
+
+    nav ul {
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .container {
+        min-width: 400px;
+        min-height: 600px;
+    }
+
+    header h1 {
+        background: white;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    nav li {
+        background: white;
+        float: none;
+    }
+
+    nav li a {
+        display: block;
+    }
+
+    nav ul {
+        display: list-item;
+    }
 }
