@@ -1,21 +1,27 @@
-var gameTable = document.getElementsByClassName("game-table");
+var gameTable = gameTable = document.getElementsByClassName("game-table");
+var widthInput = document.getElementById("width");
+var heightInput = document.getElementById("height");
+
 var rows = [];
 var cells = [];
+
 /*var rowsText = [];
 var cellsText = [];*/
 
 function createTable() {
-    for (let x = 0; x < 9; x++)
+    for (let x = 0; x < 10; x++)
     {
         let row = gameTable[0].insertRow(x);
-        for (let y = 0; y < 9; y++)
+        for (let y = 0; y < 10; y++)
         {
             let cell = row.insertCell(y);
             cell.style.backgroundColor = "white";
             cell.setAttribute("onmouseover",
-                "mouseOverFunc(this)");
+                "mouseOverCellFunc(this)");
             cell.setAttribute("onmouseout",
-                "mouseOffFunc(this)");
+                "mouseOffCellFunc(this)");
+            cell.setAttribute("onclick",
+                "mouseClickCellFunc(this)");
             cell.setAttribute("id", x.toString()+y.toString());
             /*var pIndex = "p"+x.toString()+y.toString();
             cell.innerHTML = "<p id=\""+pIndex+"\"></p>";*/
@@ -24,11 +30,11 @@ function createTable() {
 }
 
 function gridInitialization() {
-    for (let x = 1; x < 10; x++)
+    for (let x = 0; x < 10; x++)
     {
         rows[x] = new Array(cells);
         /*rowsText[x] = new Array(cellsText);*/
-        for (let y = 1; y < 10; y++)
+        for (let y = 0; y < 10; y++)
         {
             rows[x][y] = document.getElementById(x.toString() + y.toString());
             /*rowsText[x][y] = document.getElementById("p"+x.toString() + y.toString());*/
@@ -36,20 +42,54 @@ function gridInitialization() {
     }
 }
 
-function mouseOverFunc(x) {
+function mouseClickCellFunc(x) {
+    let coords = x.id;
+    let thisX = parseInt(coords[0], 10);
+    let thisY = parseInt(coords[1], 10);
+    try {
+        rows[thisX+1][thisY].style.backgroundColor = "red";
+    } catch(err)
+    {
+        console.log(err);
+    }
+    try {
+        rows[thisX-1][thisY].style.backgroundColor = "red";
+    } catch(err)
+    {
+        console.log(err);
+    }
+    try {
+        rows[thisX][thisY+1].style.backgroundColor = "red";
+    } catch(err)
+    {
+        console.log(err);
+    }
+    try {
+        rows[thisX][thisY-1].style.backgroundColor = "red";
+    } catch(err)
+    {
+        console.log(err);
+    }
+}
+
+function mouseOverCellFunc(x) {
     x.style.backgroundColor = "black";
-    var coords = x.id.toString();
+    let coords = x.id.toString();
     x.innerHTML = "("+coords[0]+", "+coords[1]+")";
     x.style.color = "white";
 }
 
-function mouseOffFunc(x) {
+function mouseOffCellFunc(x) {
     x.style.backgroundColor = "white";
     x.innerHTML = "";
 }
 
 function tableStuff(x, y) {
-    rows[4][4].style.backgroundColor = "red";
+    try {
+        rows[x][y].style.backgroundColor = "red";
+    } catch (err) {
+        alert("Enter values");
+    }
 }
 
 function startUp() {

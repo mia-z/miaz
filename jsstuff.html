@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Javascript Testing</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <script src="game.js"></script>
 </head>
 <body onload="startUp()">
 <div class="container">
     <header>
-        <h1><u>dont judge me</u></h1>
+        <h1><u>js testing</u></h1>
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -21,15 +20,22 @@
     </header>
     <section class="game-area">
         <div class="game-table-container">
-            <table class="game-table">
+            <table class="game-table" id="game-table">
             </table>
         </div>
-        <input type="text">
-        <ul>
-            <li><button class="create_button" onclick="createTable()">Create Table</button></li>
-            <li><button class="testButton1_button" onclick="tableStuff(4,4)">Test Button</button></li>
-        </ul>
+        <div class="game-control-container">
+            <ul>
+                <li><button class="testButton1_button"
+                            onclick="tableStuff(
+                                parseInt(widthInput.value, 10),
+                                parseInt(heightInput.value, 10)
+                                )">Test Button</button></li>
+                <li><label><input type="text" id="width"/></label></li>
+                <li><label><input type="text" id="height"/></label></li>
+            </ul>
+        </div>
     </section>
 </div>
+<script src="game.js" defer></script>
 </body>
 </html>
