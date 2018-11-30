@@ -103,8 +103,8 @@ nav li a:hover {
 .game-table td {
     height: 50px;
     width: 50px;
+    text-align: center;
 }
-
 
 /*RULES FOR SCREEN SIZING AKA RESPONSIVE DESIGN*/
 @media only screen and (max-width: 934px) {
