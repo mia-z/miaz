@@ -114,6 +114,13 @@ nav li a:hover {
     padding: 0;
 }
 
+#player {
+    height: 21px;
+    width: 21px;
+    background-color: green;
+    margin: auto;
+}
+
 /*RULES FOR SCREEN SIZING AKA RESPONSIVE DESIGN*/
 @media only screen and (max-width: 934px) {
     .container {

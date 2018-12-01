@@ -77,18 +77,20 @@ function mouseOverCellFunc(x) {
     let coords = x.id.split("_");
     console.log("("+coords[0]+", "+coords[1]+")");
     x.style.color = "white";
+
 }
 
 function mouseOffCellFunc(x) {
     x.style.backgroundColor = "white";
+
 }
 
-function tableStuff() {
-    try {
-        rows[widthInput.value][heightInput.value].style.backgroundColor = "red";
-    } catch (err) {
-        alert("Enter values");
-    }
+function testStuff() {
+    $("#5_5").append("<div id=\"player\"></div>");
+}
+
+function testStuff2() {
+    $("#player").appendTo("#5_6");
 }
 
 function startUp() {
