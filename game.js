@@ -1,6 +1,4 @@
-var gameTable = gameTable = document.getElementsByClassName("game-table");
-var widthInput = document.getElementById("width");
-var heightInput = document.getElementById("height");
+var gameTable = $(".game-table");
 
 var rows = [];
 var cells = [];
@@ -86,14 +84,16 @@ function mouseOffCellFunc(x) {
 }
 
 function testStuff() {
-    $("#5_5").append("<div id=\"player\"></div>");
+    createCharFunction();
 }
 
 function testStuff2() {
-    $("#player").appendTo("#5_6");
+
 }
 
-function startUp() {
+$(document).ready(function () {
     createTable();
     gridInitialization();
-}
+    $(".game-table-container").hide();
+    $(".game-control-container").hide();
+});

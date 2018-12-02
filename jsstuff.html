@@ -5,7 +5,7 @@
     <title>Javascript Testing</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
-<body onload="startUp()">
+<body>
 <div class="container">
     <header>
         <h1><u>js testing</u></h1>
@@ -20,7 +20,7 @@
     </header>
     <section class="game-area">
         <div class="game-table-container">
-            <table class="game-table" id="game-table">
+            <table class="game-table">
             </table>
         </div>
         <div class="game-control-container">
@@ -29,13 +29,13 @@
                             onclick="testStuff()">Create player</button></li>
                 <li><button class="testButton1_button"
                             onclick="testStuff2()">Move player</button></li>
-                <li><label><input type="text" id="width"/></label></li>
-                <li><label><input type="text" id="height"/></label></li>
             </ul>
         </div>
     </section>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="game.js" defer></script>
+<script src="createchar.js"></script>
+<script src="descriptions.js"></script>
 </body>
 </html>
