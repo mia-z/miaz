@@ -21,11 +21,7 @@ body {
     box-sizing: border-box;
 }
 
-header {
-
-}
-
-header h1 {
+header > h1 {
     font-family: "Spectral", serif;
     border-top: 3px solid black;
     background: linear-gradient(135deg, #000000 0%, #000000 55.99%, #ffffff 56%, #ffffff 100%);
@@ -69,6 +65,43 @@ nav li a:hover {
     font-weight: bold;
 }
 
+.flex-container {
+    font-family: "Ubuntu", serif;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container > h2 {
+    text-align: center;
+}
+
+.container img {
+    width: 99%;
+    margin: 4px;
+}
+
+.flex-element {
+    box-sizing: border-box;
+    width: 49%;
+    margin: 4px;
+}
+
+#tbl {
+    border-collapse: collapse;
+    width: 49%;
+}
+
+#tbl td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 3px;
+}
+
+#tbl tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
 .game-area {
     overflow: auto;
 }
@@ -89,6 +122,7 @@ nav li a:hover {
 }
 
 .game-area input {
+
 }
 
 .game-table-container {
@@ -180,6 +214,17 @@ nav li a:hover {
 
     nav ul {
         margin: 0 auto 0 auto;
+    }
+
+    .flex-element {
+        box-sizing: border-box;
+        width: 99%;
+        margin: 4px;
+    }
+
+    #tbl {
+        border-collapse: collapse;
+        width: 99%;
     }
 }
 
