@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash cards with JSON storage</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="flashcards.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="flashcards.js" async></script> 
 </head>
 <body>
 <div class="container">
@@ -13,12 +16,25 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#Home">About</a></li>
-                <li><a href="#Home">Stuff</a></li>
-                <li><a href="jsstuff.html">JS</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Stuff">Stuff</a></li>
+                <li><a href="flashcards.html">Flashcards</a></li>
             </ul>
         </nav>
     </header>
+    <div class="root">
+        <button type="button" id="create">Create new card</button>
+        <div class="controllers">
+            <p>Card Title</p>
+            <input id="cardtitle" type="text" name="card_name"></input>
+            <p>Card Reverse/Answer</p>
+            <textarea id="reverse" rows="6" cols="50" style="resize: none"></textarea>
+            <button type="button" id="done">Add</button>
+        </div>
+        <div class="flashcard_container">
+            
+        </div>
+    </div>
 </div>
 </body>
 </html>
