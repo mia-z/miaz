@@ -8,8 +8,14 @@ button {
     font-family: "Spectral", serif;
     font-size: 14pt;
     width: auto;
-    margin: 15px auto;
+    margin: 5px;
     padding: 5px;
+}
+
+.menu_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .controllers {
