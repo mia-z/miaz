@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="045fe095-3320-4658-b3fd-dc9dd9825817" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flashcards.css" beforeDir="false" afterPath="$PROJECT_DIR$/flashcards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flashcards.html" beforeDir="false" afterPath="$PROJECT_DIR$/flashcards.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flashcards.js" beforeDir="false" afterPath="$PROJECT_DIR$/flashcards.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashcards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="152">
               <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="81" />
             </state>
           </provider>
@@ -31,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashcards.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+            <state relative-caret-position="931">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -40,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashcards.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="2660">
+              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
             </state>
           </provider>
         </entry>
@@ -63,9 +60,9 @@
       <list>
         <option value="$PROJECT_DIR$/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/flashcards.js" />
         <option value="$PROJECT_DIR$/flashcards.html" />
         <option value="$PROJECT_DIR$/flashcards.css" />
+        <option value="$PROJECT_DIR$/flashcards.js" />
       </list>
     </option>
   </component>
@@ -88,7 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,6 +96,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,11 +163,13 @@
       <workItem from="1543112440749" duration="41000" />
       <workItem from="1543112500834" duration="7566000" />
       <workItem from="1545757522403" duration="4509000" />
+      <workItem from="1545965473732" duration="22000" />
+      <workItem from="1545965528538" duration="355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20139000" />
+    <option name="totallyTimeSpent" value="20516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1365" height="763" extended-state="0" />
@@ -212,24 +211,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashcards.css">
+    <entry file="file://$PROJECT_DIR$/flashcards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+        <state relative-caret-position="152">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashcards.html">
+    <entry file="file://$PROJECT_DIR$/flashcards.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="81" />
+        <state relative-caret-position="931">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashcards.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="2660">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>

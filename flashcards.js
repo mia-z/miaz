@@ -1,7 +1,6 @@
-//When all DOM elements have finished loading, this function is called.
 $(document).on("ready", DOMLoadFunction());
 
-var CardList = [];
+let CardList = [];
 var currentCount = 0;
 
 function DOMLoadFunction() {
@@ -43,8 +42,15 @@ function done_Click() {
 }
 
 function save_Click() {
-    JSON.stringify(CardList);
+    if (CardList.length > 0) {
+        downloadObjectAsJson(CardList, "FlashCards");
+    } else {
+        alert("Nothing to export!");
+    }
+}
 
+function import_Click() {
+    
 }
 
 //Operation for handling the showing of the two "sides" of the cards
@@ -140,12 +146,13 @@ function emptyChecker() {
     return false;
 }
 
+
 function downloadObjectAsJson(exportObj, exportName) {
-    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
-    var downloadAnchorNode = document.createElement('a');
+    let dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+    let downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
     downloadAnchorNode.setAttribute("download", exportName + ".json");
     document.body.appendChild(downloadAnchorNode); // required for firefox
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
-    }
+}
