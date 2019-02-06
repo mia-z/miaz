@@ -1,0 +1,132 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    font-family: "Spectral", serif;
+}
+
+.menu_buttons label, .controllers label {
+    font-family: "Spectral", serif;
+    font-size: 18pt;
+    margin: 5px 30px;
+    padding: 0 5px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.menu_buttons label:hover, .controllers label:hover {
+    background-color: white;
+}
+
+.menu_buttons label:active, .controllers label:active {
+    background-color: gainsboro;
+}
+
+.menu_buttons button, .controllers button, #import, #file_input {
+    display: none;
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.menu_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.controllers {
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    background-color:whitesmoke;
+    padding: 5px;
+}
+
+.controllers p {
+    text-align: center;
+    margin-bottom: -3px;
+}
+
+.flashcard_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 600px;
+    overflow: auto;
+}
+
+[id*="card"] {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    height: 300px;
+    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 98%,#ededed 99%,#ffffff 100%);   
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 2px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+[id*="text_container"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 90%;
+    max-height: 85%;
+}
+
+[id*="front"], [id*="back"] {
+    text-align: center;
+    font-family: "Spectral", serif;
+    font-size: 16pt;
+    height: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+[id*="delete"] {
+    height: 17px;
+    margin: 0 0 0 auto;
+    background-color: red;
+    border-radius: 25px;
+    border: 1px solid grey;
+}
+
+[id*="delete"]:hover {
+    background-color: lightcoral;
+}
+
+[id*="delete"]:active {
+    background-color: darkred;
+}
+
+[id*="flip"] {
+    font-size: 14pt;
+    margin: 0 auto;
+    padding: 2px 7px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+[id*="flip"]:hover {
+    background-color: white;
+}
+
+[id*="flip"]:active {
+    background-color: gainsboro;
+}
+
+textarea, input {
+    resize: none;
+    font-family: "Spectral", serif;
+    font-size: 12pt;
+}

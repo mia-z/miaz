@@ -1,0 +1,255 @@
+/*TOP RIGHT BOTTOM LEFT*/
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Spectral");
+
+body {
+    background-image: url("houndstooth-pattern.png");
+}
+
+.container {
+    background: rgba(225, 225, 225,0.5);
+    max-width: 920px;
+    min-height: 600px;
+    margin: 10px auto 0 auto;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    border-right: 10px double;
+    border-left: 10px double;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-sizing: border-box;
+}
+
+header > h1 {
+    font-family: "Spectral", serif;
+    border-top: 3px solid black;
+    background: linear-gradient(135deg, #000000 0%, #000000 55.99%, #ffffff 56%, #ffffff 100%);
+    margin: auto -8px auto -8px;
+    padding-right: 4px;
+    text-align: end;
+}
+
+nav {
+    background: linear-gradient(135deg, #FFFFFF 0%,#FFFFFF 50.99%,#000000 51%,#000000 100%);
+    margin: auto -8px auto -8px;
+    border-bottom: 3px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 50% 0 auto;
+    padding: 0;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    font-family: "Ubuntu", serif;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.flex-container {
+    font-family: "Ubuntu", serif;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container > h2 {
+    text-align: center;
+}
+
+.container img {
+    width: 99%;
+    margin: 4px;
+}
+
+.flex-element {
+    box-sizing: border-box;
+    width: 49%;
+    margin: 4px;
+}
+
+#tbl {
+    border-collapse: collapse;
+    width: 49%;
+}
+
+#tbl td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 3px;
+}
+
+#tbl tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+.game-area {
+    overflow: auto;
+}
+
+.game-control-container {
+    width: 30%;
+    height: 100%;
+    margin: 10px;
+
+}
+
+.game-area ul {
+    list-style-type: none;
+}
+
+.game-area li {
+    margin: 0 10px;
+}
+
+.game-area input {
+
+}
+
+.game-table-container {
+    height: 100%;
+    width: auto;
+    border: 2px solid black;
+    margin: 10px;
+    float: left;
+}
+
+.game-table {
+    height: auto;
+    width: auto;
+    border: none;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+
+.game-table td {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 0;
+}
+
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start-screen > #input_name {
+    margin: 10px auto;
+}
+
+.start-screen > #radio_list {
+    margin: 10px auto;
+}
+
+.start-screen > #desc_box {
+    margin: 10px auto;
+    width: 400px;
+    padding: 5px;
+    border: 3px solid black;
+    font-family: "Spectral", serif;
+    font-weight: bold;
+}
+
+#player {
+    height: 21px;
+    width: 21px;
+    background-color: green;
+    margin: auto;
+}
+
+/*RULES FOR SCREEN SIZING AKA RESPONSIVE DESIGN*/
+@media only screen and (max-width: 934px) {
+    .container {
+        min-width: 600px;
+        min-height: 600px;
+    }
+
+    header h1 {
+        background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 50.99%, #000000 51%, #000000 100%);
+        text-align: start;
+        padding-left: 15px;
+    }
+
+    nav {
+        background: linear-gradient(45deg, #FFFFFF 0%,#FFFFFF 50.99%,#000000 51%,#000000 100%);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        min-width: 450px;
+        min-height: 600px;
+    }
+
+    header h1 {
+        background: white;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    nav {
+        background: white;
+    }
+
+    nav ul {
+        margin: 0 auto 0 auto;
+    }
+
+    .flex-element {
+        box-sizing: border-box;
+        width: 99%;
+        margin: 4px;
+    }
+
+    #tbl {
+        border-collapse: collapse;
+        width: 99%;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .container {
+        min-width: 400px;
+        min-height: 600px;
+    }
+
+    header h1 {
+        background: white;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    nav li {
+        background: white;
+        float: none;
+    }
+
+    nav li a {
+        display: block;
+    }
+
+    nav ul {
+        display: list-item;
+    }
+}

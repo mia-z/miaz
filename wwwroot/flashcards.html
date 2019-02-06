@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash cards with JSON storage</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="flashcards.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="flashcards.js" async></script> 
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Inlämningsuppgift 2 (CSS)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Stuff">Stuff</a></li>
+                <li><a href="flashcards.html">Flashcards</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="menu_buttons">
+            <label for="create">Create New Card</label>
+            <label for="save">Save Locally</label>
+            <label for="import">Import JSON</label>
+            <button type="button" id="create" name="create"></button>
+            <button type="button" id="save" name="save"></button>
+            <input type="file" id="import" name="import"></button>
+            <input id="file_input" type="file" name="flashcard_deck"/>
+        </div>
+        <div class="controllers">
+            <p>Card Title</p>
+            <input id="title" type="text" name="card_name">
+            <p>Card Reverse/Answer</p>
+            <textarea id="reverse" rows="6" cols="50" style="resize: none"></textarea>
+            <label for="done">Add</label>
+            <button type="button" id="done" name="done">Add</button>
+        </div>
+        <div class="flashcard_container">
+            <!-- CARDS GO IN HERE -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
