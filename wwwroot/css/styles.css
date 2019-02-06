@@ -1,0 +1,46 @@
+@import url('/wwwroot/css/bootstrap.css');
+@import url('https://fonts.googleapis.com/css?family=Muli|Playfair+Display|IBM+Plex+Mono');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(47, 23, 15, 0.65)), url("/wwwroot/media/images/abstract-background-canvas-249798.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(70, 70, 70, 0.918))), url("/wwwroot/media/images/abstract-background-canvas-249798.jpg");
+}
+
+.site-heading {
+    margin: 1rem auto 5rem auto;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.site-heading-upper {
+    background-color: white;
+}
+
+.site-heading-lower {
+    background-color: white;
+}
+
+.console-box { /*976x509*/
+    background-image: url("/wwwroot/media/images/cmdbox.png");
+    height: 509px;
+    width: 976px;
+    margin: 0 auto;
+}
+
+.console-box-title {
+    font-family: 'Muli', sans-serif;
+    text-decoration-color: black;
+    margin: 0 0 0 2rem;
+}
+
+.console-box-inner {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+}
