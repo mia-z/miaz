@@ -1,5 +1,5 @@
 @import url('/wwwroot/css/bootstrap.css');
-@import url('https://fonts.googleapis.com/css?family=Muli|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Muli|Playfair+Display|IBM+Plex+Mono');
 
 * {
     box-sizing: border-box;
@@ -29,4 +29,18 @@ body {
     height: 509px;
     width: 976px;
     margin: 0 auto;
+}
+
+.console-box-title {
+    font-family: 'Muli', sans-serif;
+    text-decoration-color: black;
+    margin: 0 0 0 2rem;
+}
+
+.console-box-inner {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
 }
